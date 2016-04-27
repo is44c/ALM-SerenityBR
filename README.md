@@ -96,11 +96,13 @@ Como começar:
 
 Se você se interessou pelo Serenity ALM e gostaria de usa-ló os primeiros passos para utiliza-ló são:
 
-1.  Acesso a rede do banco com um Login\\Sigla de rede, caso você não tenha acesso será necessário solicita-ló pois todas as ferramentas estão hospedadas na Espanha e acessíveis pela rede GSNET e não por rede pública.
+## Pré-Requisitos
 
-2.  Solicitação da criação dos usuários e projetos pelo processo de “Onboarding” via chamado no Jira da Espanha.
+Acesso a rede do banco com um *Login\\Sigla de rede*, caso você não tenha acesso será necessário solicita-ló pois todas as ferramentas estão hospedadas na Espanha e *acessíveis pela rede GSNET* e não por rede pública.
 
-3.  Configuração das ferramentas:
+1.  Solicitação da criação dos usuários e projetos pelo processo de “Onboarding” via chamado no Jira da Espanha.
+
+2.  Configuração das ferramentas:
 
     1.  JIRA
 
