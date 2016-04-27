@@ -202,7 +202,7 @@ Primeiro projeto
 Com o acesso concedido e o primeiro usuário criado você terá as permissões necessárias para criar as tarefas (Issues) do seu projeto e criar a sua primeira Sprint. Além de configurar os quadros Kanban.
 
 
-Links uteis Internos
+Links Internos
 ===========
 
 Media Wiki:
@@ -214,7 +214,7 @@ Configuração do Eclipse:
 Configuração do arquivo .POM (Maven)
 <http://mediawiki.ci.gsnet.corp/w/index.php/Configure_your_settings>
 
-Videos e tutorias sobre as as peças utilizadas no modelo DevOps
+Vídeos e tutorias sobre as peças utilizadas no modelo DevOps 
 <http://formacion-globalpaas-pro.appls.boae.paas.gsnetcloud.corp/index.html>
 
 Documentação sobre o OpenShift e suas peças
@@ -223,7 +223,7 @@ Documentação sobre o OpenShift e suas peças
 Imagens Dockers Coorporativas
 <https://gitlab.ci.gsnet.corp/openshift-v3/documentation/blob/master/Corporate_docker_images.md>
 
-Links uteis Externos
+Links Externos
 ===========
 
 DevOps (Jenkin/PowerShell/Docker)
