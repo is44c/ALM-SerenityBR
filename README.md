@@ -1,4 +1,4 @@
-# DevOps na Produban com Serenity ALM
+DevOps na Produban com Serenity ALM
 
 Sobre o documento
 =================
@@ -96,15 +96,11 @@ Como começar:
 
 Se você se interessou pelo Serenity ALM e gostaria de usa-ló os primeiros passos para utiliza-ló são:
 
-## Pré-Requisitos
+1.  Acesso a rede do banco com um Login\\Sigla de rede, caso você não tenha acesso será necessário solicita-ló pois todas as ferramentas estão hospedadas na Espanha e acessíveis pela rede GSNET e não por rede pública.
 
-Acesso a rede do banco com um *Login\\Sigla de rede*, caso você não tenha acesso será necessário solicita-ló pois todas as ferramentas estão hospedadas na Espanha e *acessíveis pela rede GSNET* e não por rede pública.
+2.  Solicitação da criação dos usuários e projetos pelo processo de “Onboarding” via chamado no Jira da Espanha.
 
-## Passos
-
-1.  Solicitação da criação dos usuários e projetos pelo processo de “Onboarding” via chamado no Jira da Espanha.
-
-2.  Configuração das ferramentas:
+3.  Configuração das ferramentas:
 
     1.  JIRA
 
@@ -146,9 +142,6 @@ Acesso o Link <https://jira.ci.gsnet.corp/browse/CIGENTASKS/> e clique em “Cre
 Verifique se o Projeto selecionado é “ALM Serenity Support” e no campo “Reporter” coloque “alm-op” caso você ainda não tenha usuário criado.
 
 De qualquer maneira anexe a planilha com as informações os usuários que terão acesso:
-
-[download da planilha](TemplateALM.xlsx)
-
 
 Campos do Projeto:
 
@@ -200,40 +193,6 @@ Primeiro projeto
 ================
 
 Com o acesso concedido e o primeiro usuário criado você terá as permissões necessárias para criar as tarefas (Issues) do seu projeto e criar a sua primeira Sprint. Além de configurar os quadros Kanban.
-
-
-Links Internos
-===========
-
-Media Wiki:
-<http://mediawiki.ci.gsnet.corp/w/index.php/Main_Page>
-
-Configuração do Eclipse:
-<http://mediawiki.ci.gsnet.corp/w/index.php/Configuring_your_workstation_to_start_working_with_GreenLight>
-
-Configuração do arquivo .POM (Maven)
-<http://mediawiki.ci.gsnet.corp/w/index.php/Configure_your_settings>
-
-Vídeos e tutorias sobre as peças utilizadas no modelo DevOps 
-<http://formacion-globalpaas-pro.appls.boae.paas.gsnetcloud.corp/index.html>
-
-Documentação sobre o OpenShift e suas peças
-<https://gitlab.ci.gsnet.corp/openshift-v3/documentation/tree/master>
-
-Imagens Dockers Coorporativas
-<https://gitlab.ci.gsnet.corp/openshift-v3/documentation/blob/master/Corporate_docker_images.md>
-
-Links Externos
-===========
-
-DevOps (Jenkin/PowerShell/Docker)
-<https://www.devopslibrary.com/>
-
-Kubernetes (orquestrador de conteiners)
-<http://kubernetes.io/docs/whatisk8s/>
-
-Git
-<https://guides.github.com/>
 
 Referencias
 ===========
