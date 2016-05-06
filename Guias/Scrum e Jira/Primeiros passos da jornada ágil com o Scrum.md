@@ -7,7 +7,7 @@ Este documento não tem por objetivo ser um guia definitivo ou mesmo uma bíblia
 
 Caso você não esteja familiarizado com o Serenity ALM recomendamos a leitura deste link:
 
-LINK para o serenity.
+https://github.com/ProdubanBR/ALM-SerenityBR
 
 Motivação e um pouco de teoria 
 ===============================
@@ -213,25 +213,215 @@ Prática com Jira
 
 No Serenity ALM a ferramenta eleita para suportar o processo de criação dos Backlogs, definição de Sprints, acompanhamento de tarefas e relatórios é o JIRA.
 
-Kanban
-------
+O primeiro passo para gestão das tarefas a criação de um projeto no Jira.
 
-Todo
+Neste documento vamos abordar o fluxo de criação e manutenção do Jira como administrador da ferramenta, lembrando que dentro do Serenity ALM nem todos possuíram este acesso. Porém, caso você queira saber como funciona o fluxo de solicitação dentro do Serenity ALM basta seguir o fluxo de Onboard descrito no documento <https://github.com/ProdubanBR/ALM-SerenityBR>.
 
 Criando um projeto
 ------------------
 
-Todo
+Para criar um projeto no basta acessar o Jira e efetuar o Login, no menu irá conter a opção “Projects” e selecionar “Create Project”
 
-Criando uma Sprint
-------------------
+<img src="./media/image2.png" width="566" height="261" />
 
-Todo
+Como pode-se verificar o JIRA permite a criação e o gerenciamento de diversos tipos de projeto de Negócio ou de Software, utilizando Scrum ou outro método ágil ou não.
 
-Criando Tarefas
+Neste exemplo iremos criar um novo projeto utilizando o método Scrum.
+
+<img src="./media/image3.png" width="566" height="361" />
+
+Por padrão ao se criar um projeto com Scrum no Jira ele irá predefinir os tipos de tarefas (Issue Types) e um Workflow padrão, que podem ser modificados depois.
+
+A estrutura padrão de tarefas no Jira é:
+
+E o Workflow padrão:
+
+<img src="./media/image4.png" width="314" height="48" />
+
+Após escolher o método de trabalho você deve escolher o nome do projeto (que deve ter no máximo 80 caracteres), a chave (que pode ser gerada automaticamente a partir do Nome) e o Líder do Projeto.
+
+<img src="./media/image5.png" width="566" height="265" />
+
+O líder do projeto é um papel fundamental no Jira, pois ele terá a permissão de realizar configurações no projeto como por exemplo adicionar novos membros no time.
+
+Configurando o seu projeto
+--------------------------
+
+Antes de iniciar o cadastro dos itens no backlog do projeto é interessante verificar se os tipos de tarefa e o workflow atual atende a necessidade de seu processo.
+
+Dentro do grupo Santander além dos tipos de tarefa apontados (Epic, Story, Task, Bug e Sub-Task) também é utilizado o conceito de “Feature”.
+
+Para a criação deste novo tipo de issue acesse “Project settings” &gt; “Issue Types”
+
+<img src="./media/image6.png" width="566" height="267" />
+
+<img src="./media/image7.png" width="566" height="311" />
+
+Selecione “Actions”&gt; “Edit Issue Types”&gt; “Add issue type”
+
+<img src="./media/image8.png" width="532" height="321" />
+
+E crie o novo tipo “Feature”
+
+Tipos de tarefa no Jira
+-----------------------
+
+Abaixo estão descritos uma sugestão de uso destas atividades.
+
+**Epic**: Épicos são ‘corpos de trabalho’ que agrupam uma série de histórias de usuário e uma série de ‘Features’, que representam uma funcionalidade em nível de negócio.
+
+Exemplos:
+
+-   Todo o recurso de gerenciamento de conta;
+
+-   Toda a funcionalidade de verificar o histórico de compras.
+
+**Feature**: São funcionalidades do sistema em nível de negócio e agrupam várias histórias de usuários (assim como os épicos). Diferentes dos épicos as Features/Funcionalides representam alguma funcionalidade especifica sistêmica dentro de um grupo de funcionalidades de negócio
+
+Exemplos:
+
+-   Editar as informações do usuário
+
+-   Buscar uma compra anterior
+
+**Story**: São histórias de usuário, originadas pela especificação do método ágil XP.
+
+User Stories são **escritos pelos clientes** como coisas que o sistema precisa fazer por eles. Eles são semelhantes aos ‘use cases’, exceto que não se limitam a descrever a interface de usuário. Eles estão no formato de cerca de três frases do texto escritos pelo cliente na terminologia clientes sem citar a tecnologia.
+
+User Stories também conduzem a criação dos testes de aceitação. É recomendado criar um ou mais testes de aceitação automatizados para verificar se história do usuário foi implementado corretamente.
+
+É recomendado criar as histórias com a seguinte sintaxe
+
+> “As a &lt;type of user&gt;, I want &lt;goal&gt; so that I &lt;receive benefit&gt;”
+>
+> “Como um &lt;tipo de usuário&gt;, eu quero &lt;objetivo&gt; para que eu &lt;benefício recebido&gt;”
+
+Exemplo:
+
+-   Como um cliente de conta corrente, eu quero verificar o meu saldo para que eu saiba o quanto eu tenho para gastar.
+
+**Task:** São as tarefas em nível de desenvolvimento necessárias para que seja possível o desenvolvimento de uma **Story**. Elas devem ser significantes para o time de desenvolvimento, mas com informações suficientes para que o Scrum Master e o P.O. tenham a compreensão do que está sendo desenvolvido.
+
+Exemplo:
+
+-   Criar a tabela no banco de dados para armazenar os dados do usuário
+
+-   Desenvolver o front-end para desenvolver a tela de edição dos dados de usuário
+
+**Sub-Task:** São sub passos, bem atómicos, sobre o que deve ser feito dentro de uma tarefa. Este tipo de ‘issue’ não é obrigatório para todas as tarefas.
+
+Exemplo:
+
+-   Criação da camada de acesso ao banco para consulta da tabela de clientes
+
+-   Edição do campo de email para o dado do usuário
+
+**Bug:** São tarefas que representam erros do sistema que devem ser corrigidos para o time de desenvolvimento.
+
+Exemplo:
+
+-   Erro ao cadastrar usuários com aspas no nome. Preconceito com Joana D’ark.
+
+Gestão de Backlog
+-----------------
+
+O próximo passo é criar o backlog contendo as atividades do seu projeto na tela de backlog, basta selecionar o tipo de “issue” e escrever as atividades para serem adicionadas no backlog.
+
+Importante, a responsabilidade de escrever o backlog é do P.O. com o suporte do Scrum Master.
+
+<img src="./media/image9.png" width="566" height="236" />
+
+Após criar algumas tarefas e adiciona-las no backlog podemos criar uma Sprint para execução destas tarefas.
+
+Mas antes de criar a Sprint é recomendável estimar as tarefas utilizando a técnica de planning poker (veja: <https://en.wikipedia.org/wiki/Planning_poker>) ou técnicas de estimativas similares.
+
+<img src="./media/image10.png" width="566" height="218" />
+
+A utilização da estimativa vai permitir o cálculo da velocidade de entrega dos times, dando uma visão de pontos por Sprint.
+
+<img src="./media/image11.png" width="566" height="185" />
+
+Para criar uma Sprint basta clicar no botão “create a Sprint” e arrastar e soltar as tarefas a serem adicionadas em cada Sprint e clicar em “Start Sprint”.
+
+<img src="./media/image12.png" width="566" height="238" />
+
+Após a configuração das datas de início e fim da Sprint, podemos inicia-la.
+
+<img src="./media/image13.png" width="566" height="383" />
+
+Kanban
+------
+
+O Kanban é uma técnica relacionada ao método Just-in-Time, desenvolvida e aperfeiçoada em 1940 por Taiichi Ohno e Sakichi Toyoda conhecida como Sistema Toyota de Produção. Ele tem como objetivo indicar o andamento do fluxo de produção de modo visual.
+
+Dessa maneira qualquer pessoa que olhe o kanban pode facilmente identificar o que cada pessoa está executando no projeto e o seu andamento.
+
+Dentro do Jira o Kanban associa uma série de atividades e por padrão traz as seguintes colunas: To Do, In Progress e Done.
+
+<img src="./media/image14.png" width="566" height="220" />
+
+Para atender os passos específicos de cada projeto o fluxo de trabalho, pode ser customizado.
+
+Para isso basta clicar na opção de “Board” &gt; “Configure”&gt; “Columns” e “Add Collumn”
+
+<img src="./media/image15.png" width="566" height="233" />
+
+<img src="./media/image16.png" width="566" height="283" />
+
+Observe que existem outras configurações no Jira como a opção “Days in Collumn” que exibe os dias que cada tarefa está em cada coluna e a opção de “Column Constraint” que permite limitar o número de tarefas por coluna.
+
+E outras opções que permitem agrupas os cards, definir a cor por tipos customizados, definir o tipo de estimativa entre outros.
+
+Uso das tarefas
 ---------------
 
-Todo
+Após a atribuição das tarefas da Sprint para cada membro do time é recomendada o uso das colunas de cada atividade para acompanhamento. Por exemplo: atualização do status das tarefas nos comentários, definição de prioridade, definição do Epic, definição de tarefas ligadas (uma tarefa dependente de outra) dentre outros.
+
+<img src="./media/image17.png" width="566" height="359" />
+
+<img src="./media/image18.png" width="566" height="387" />
+
+Adicionar usuários
+==================
+
+Para adicionar um novo usuário no Jira é necessário ter as devidas permissões e clicar em “selecionar membros para o time”
+
+<img src="./media/image19.png" width="566" height="248" />
+
+Configuração de Workflow
+========================
+
+Para configurar um fluxo de trabalho customizado é necessário possuir as devidas permissões de admistração. Acessar “Issues”&gt; “Workflow”. Neste local te dará a visão atual do workflow que está sendo utilizado pelo projeto.
+
+Atenção: o workflow utilizado pelo seu projeto pode ser compartilhado com outros projetos, por isso cuidado ao alterar.
+
+<img src="./media/image20.png" width="566" height="315" />
+
+Observe que o Workflow do Jira tem 2 tipos de componentes:
+
+1.  Status
+
+Assim como o próprio nome diz são status da atividade, normalmente associados a uma coluna no Kanban.
+
+1.  Transition
+
+São restrições de transições de status entre as tarefas, permitindo a passagem de um status para outro.
+
+Como exemplo vamos criar um novo Status, “Shadown Deploy” que só pode ser transferido de “wait P.O. action”
+
+Para isso primeiramente crie o novo status em “add status”
+
+<img src="./media/image21.png" width="390" height="222" />
+
+<img src="./media/image22.png" width="549" height="399" />
+
+Após isso selecione a opção de “add transition”
+
+<img src="./media/image23.png" width="544" height="448" />
+
+<img src="./media/image24.png" width="566" height="319" />
+
+Obs:. Adicionar transições só é permitido em workflows inativos.
 
 Referencias
 ===========
@@ -247,3 +437,7 @@ Referencias
 \[6\] <https://kenschwaber.wordpress.com/>
 
 \[7\] <http://www.scrumguides.org/docs/scrumguide/v1/Scrum-Guide-Portuguese-BR.pdf>
+
+\[8\] <https://www.atlassian.com/agile/delivery-vehicles>
+
+\[9\] <http://www.extremeprogramming.org/rules/userstories.html>
