@@ -234,6 +234,8 @@ Por padrão ao se criar um projeto com Scrum no Jira ele irá predefinir os tipo
 
 A estrutura padrão de tarefas no Jira é:
 
+<img src="./media/image25.png" />
+
 E o Workflow padrão:
 
 <img src="./media/image4.png" width="314" height="48" />
