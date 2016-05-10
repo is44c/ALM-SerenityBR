@@ -7,7 +7,7 @@ Este documento não tem por objetivo ser um guia definitivo ou mesmo uma bíblia
 
 Caso você não esteja familiarizado com o Serenity ALM recomendamos a leitura deste link:
 
-https://github.com/ProdubanBR/ALM-SerenityBR
+<https://github.com/ProdubanBR/ALM-SerenityBR>
 
 Motivação e um pouco de teoria 
 ===============================
@@ -422,6 +422,23 @@ Após isso selecione a opção de “add transition”
 <img src="./media/image24.png" width="566" height="319" />
 
 Obs:. Adicionar transições só é permitido em workflows inativos.
+
+Configuração de Workflow
+========================
+
+Relatórios no Jira:
+
+Burndown
+
+<img src="./media/image25.png" width="566" height="216" />
+
+Sprint
+
+<img src="./media/image26.png" width="427" height="231" />
+
+Velocidade
+
+<img src="./media/image27.png" width="566" height="253" />
 
 Referencias
 ===========
